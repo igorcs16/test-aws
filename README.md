@@ -13,6 +13,7 @@ conforme arquitetura;
 1. Comando para provisionar as infraestrutura:
 
 ```
+cd terraform/
 terraform apply -var-file="vars/cloudwatch.tfvars" -var-file="vars/lambda.tfvars" -var-file="vars/kinesis.tfvars" -var-file="vars/s3.tfvars"
 ```
 
