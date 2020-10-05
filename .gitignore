@@ -1,0 +1,35 @@
+# Compiled files
+*.tfstate
+*.tfstate.backup
+*.tfstate.lock.info
+
+# logs
+*.log
+
+# Directories
+*.terraform/
+
+# Temp files
+*tfplan*
+*tmpl*
+
+# Byte-compiled
+__pycache__/
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# pyenv
+.python-version
+
+# vscode
+.vscode
+
+# zip
+*.zip
