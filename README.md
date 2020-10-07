@@ -18,3 +18,9 @@ terraform apply -var-file="vars/cloudwatch.tfvars" -var-file="vars/lambda.tfvars
 ```
 
 2. Cloudwatch é desabilitado por padrão, portanto após o provisionamento do terraform é necessário habilita-lo para iniciar o processo de ingestão
+
+3. Apagar todos os recursos criados:
+```
+cd terraform/
+terraform destroy -var-file="vars/cloudwatch.tfvars" -var-file="vars/lambda.tfvars" -var-file="vars/kinesis.tfvars" -var-file="vars/s3.tfvars"
+```
